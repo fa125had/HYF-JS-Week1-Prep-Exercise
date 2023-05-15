@@ -33,13 +33,11 @@ while (rotations < 2) {
   //solution
   if (currentState === 'green') {
     trafficLight.state = 'orange';
-    console.log(`The traffic light is on, %c${trafficLight.state}`, `color: ${trafficLight.state}`);
   }
-  if (trafficLight.state === 'orange') {
+  else if (currentState === 'orange') {
     trafficLight.state = 'red';
-    console.log(`The traffic light is on, %c${trafficLight.state}`, `color: ${trafficLight.state}`);
   }
-  if (trafficLight.state === 'red') {
+  else if (currentState === 'red') {
     trafficLight.state = 'green';
     rotations++;
   }
